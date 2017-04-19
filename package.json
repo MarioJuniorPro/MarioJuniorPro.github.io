@@ -1,0 +1,15 @@
+{
+  "name": "MarioJuniorPro.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MarioJuniorPro/MarioJuniorPro.github.io.git",
+  "author": "MarioJuniorPro <mario.junior.pro@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.5.2"
+  },
+  "scripts": {
+    "server" : "lite-server",
+    "build" : "node-sass scss/style.scss css/style.css"
+  }
+}

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Changa+One|Roboto+Slab");
+* {
+  box-sizing: border-box; }
+
+html,
+body,
+ul,
+ol,
+li,
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+input,
+textarea,
+select {
+  font-size: 110%;
+  line-height: 1.1; }
+
+body {
+  background-color: #0d112b;
+  font-size: 16px; }
+  body ::selection {
+    color: #a20bae;
+    background: #358ee1; }
+
+header {
+  text-transform: uppercase;
+  min-height: 5rem;
+  background-color: #2c2c48;
+  display: flex;
+  align-items: center; }
+  header #title {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 2rem; }
+    header #title h1,
+    header #title a {
+      margin: 0;
+      display: flex;
+      font-family: "Bungee", cursive;
+      font-size: 2rem;
+      color: #FFFFFF; }
+  header #top-menu {
+    flex: 9; }
+    header #top-menu ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap; }
+      header #top-menu ul li {
+        display: flex;
+        height: 3rem;
+        flex-basis: 10rem;
+        font-family: "Changa One", cursive;
+        font-size: 2rem; }
+        header #top-menu ul li a {
+          display: flex;
+          flex: 1;
+          align-items: center;
+          justify-content: center;
+          color: #358ee1; }
+          header #top-menu ul li a:hover {
+            color: #a20bae; }
+
+footer {
+  padding: 1.5rem;
+  height: 5rem;
+  background-color: #2c2c48;
+  color: #FFFFFF;
+  text-align: center; }
+  footer .fa-heart {
+    color: #a20bae; }
+  footer .fa-coffee {
+    color: #358ee1; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+h2.title {
+  flex: 1;
+  font-family: "Bungee", cursive;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 2.1rem;
+  margin: 0.5rem;
+  line-height: 2.94rem;
+  text-align: center; }
+
+#home {
+  background-color: #2c2c48;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #home .info {
+    flex: 1; }
+    #home .info .avatar img {
+      height: 250px;
+      border: 0.7rem solid #0d112b;
+      border-radius: 50%; }
+  #home .tags {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    #home .tags li {
+      flex: 1;
+      font-family: "Roboto Slab", serif, sans-serif;
+      font-size: 1.414rem;
+      color: #FFFFFF;
+      font-weight: 100;
+      padding: 1rem 1rem; }
+  #home .job-title {
+    color: #a20bae; }
+
+#home, #projects, #skills, #about-me, #social {
+  background-color: #2c2c48;
+  padding: 1.5rem 2rem 2.5rem 2rem;
+  margin: 1.5rem auto;
+  display: flex; }
+
+#skills {
+  display: flex;
+  flex-direction: column; }
+  #skills .title {
+    flex: 1; }
+  #skills .skills {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    #skills .skills .skill {
+      flex: 1;
+      flex-basis: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: row;
+      color: #a20bae;
+      font-size: 2.1rem; }
+      #skills .skills .skill .icon:hover {
+        color: #358ee1; }
+      #skills .skills .skill .legend {
+        padding-left: 1rem;
+        flex: 1;
+        font-family: "Changa One", cursive;
+        color: #358ee1; }
+      #skills .skills .skill .measure {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end; }
+        #skills .skills .skill .measure:hover {
+          color: #358ee1; }
+
+#social {
+  display: flex;
+  flex-direction: column; }
+  #social .title {
+    flex: 1; }
+  #social .social-networks {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem; }
+    #social .social-networks li {
+      font-size: 1.414rem;
+      color: #FFFFFF; }
+      #social .social-networks li .fa {
+        font-size: 4.2rem;
+        color: #a20bae; }
+        #social .social-networks li .fa:hover {
+          color: #358ee1; }
+
+#projects {
+  display: flex;
+  flex-direction: column; }
+  #projects .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    #projects .project div {
+      padding: 2rem; }
+    #projects .project .thumb {
+      flex: 1; }
+    #projects .project .thumb > img {
+      margin-top: -1rem;
+      width: 100%; }
+    #projects .project .info {
+      flex: 1; }
+      #projects .project .info h3 {
+        color: #358ee1;
+        font-size: 2.1rem;
+        font-family: "Bungee", cursive;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0; }
+      #projects .project .info p {
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-family: "Roboto Slab", serif, sans-serif;
+        line-height: 1.6rem; }
+
+#about-me {
+  display: flex;
+  flex-direction: column; }
+  #about-me .info {
+    flex: 1;
+    color: #FFFFFF;
+    font-size: 2.1rem;
+    font-family: "Roboto Slab", serif, sans-serif;
+    font-style: italic;
+    padding: 2rem 4rem;
+    opacity: 80.8; }
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 1; }
+  90% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }

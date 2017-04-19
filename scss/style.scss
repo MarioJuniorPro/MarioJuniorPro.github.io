@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Changa+One|Roboto+Slab');
+// font-family: 'Passion One', cursive;
+// font-family: 'Changa One', cursive;
+// font-family: 'Bungee', cursive;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+select {
+  font-size: 110%;
+  line-height: 1.1;
+}
+
+$primary: #a20bae; //#602088
+$secondary: #358ee1;
+$default: #FFFFFF;
+$light: #2c2c48;
+$dark: #0d112b;
+
+$font_primary: 'Bungee', cursive;
+$font_secondary: 'Changa One', cursive;
+$font_text: 'Roboto Slab', serif, sans-serif;
+
+$font_size_1: 0.707rem;
+$font_size_2: 1rem;
+$font_size_3: 1.414rem;
+$font_size_4: 2.1rem;
+$font_size_5: 2.827rem;
+
+body {
+  background-color: $dark;
+  font-size: 16px;
+  ::selection {
+    color: $primary;
+    background: $secondary;
+  }
+}
+
+header {
+  text-transform: uppercase;
+  min-height: 5rem;
+  background-color: $light;
+  display: flex;
+  align-items: center;
+  #title {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 2rem;
+    h1,
+    a {
+      margin: 0;
+      display: flex;
+      font-family: $font_primary;
+      font-size: 2rem;
+      color: $default;
+    }
+  }
+  #top-menu {
+    flex: 9;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      li {
+        display: flex;
+        height: 3rem;
+        flex-basis: 10rem;
+        font-family: $font_secondary;
+        // background-color: $secondary;
+        font-size: 2rem;
+        a {
+          display: flex;
+          flex: 1;
+          align-items: center;
+          justify-content: center;
+          color: $secondary;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 1.5rem;
+  height: 5rem;
+  background-color: $light;
+  color: $default;
+  text-align: center;
+  .fa-heart {
+    color: $primary;
+  }
+  .fa-coffee {
+    color: $secondary;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+h2.title {
+  flex: 1;
+  font-family: $font_primary;
+  text-transform: uppercase;
+  color: $default;
+  font-size: $font_size_4;
+  margin: 0.5rem;
+  line-height: $font_size_4 * 1.4;
+  text-align: center;
+}
+
+#home {
+  background-color: $light;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .info {
+    flex: 1;
+    // align-items: center;
+    //        justify-content: center;
+    // display
+    .avatar img {
+      height: 250px;
+      border: 0.7rem solid $dark;
+      // border-left-color: $default;
+      // border-right-color: $default;
+      border-radius: 50%;
+    }
+  }
+  .tags {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+      flex: 1;
+      font-family: $font_text;
+      
+      font-size: $font_size_3;
+      color: $default;
+      font-weight: 100;
+      padding: 1rem 1rem;
+      // &:nth-child(odd) {
+      //   color: $secondary;
+      // }
+      // &:nth-child(even) {
+      //   color: $primary;
+      // }
+    }
+  }
+  .job-title {
+    color: $primary;
+  }
+}
+
+#home, #projects, #skills, #about-me, #social {
+  background-color: $light;
+  padding: 1.5rem 2rem 2.5rem 2rem;
+  margin: 1.5rem auto;
+  display: flex;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  
+  .title {
+    flex: 1;
+  }
+  .skills {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  
+  .skill {
+    flex:1;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    color: $primary;
+    font-size: $font_size_4;  
+    .icon {
+      &:hover {
+        color: $secondary;
+      }
+    }
+    .legend {
+      padding-left: 1rem;
+      flex:1;
+      font-family: $font_secondary;
+      color: $secondary;
+    }
+    .measure {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+    
+   .skill .fa {
+      // color: $primary;
+      
+    } 
+  }
+  
+}
+
+#social {
+  display: flex;
+  flex-direction: column;
+  
+  .title {
+    flex: 1;
+  }
+  .social-networks {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    li {
+      font-size: $font_size_3;
+      color: $default;
+      .fa {
+        font-size: $font_size_4 * 2;
+        color: $primary;
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  .project {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    div {
+      padding: 2rem;
+    }
+    .thumb {
+      flex: 1;
+    }
+    .thumb > img {
+      margin-top: -1rem;
+      width: 100%;
+    }
+    .info {
+      
+      flex: 1;
+      h3 {
+        
+        color: $secondary;
+        font-size: $font_size_4;
+        font-family: $font_primary;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        color: $default;
+        font-size: $font_size_2;
+        font-family: $font_text;
+        line-height: $font_size_2 * 1.6;
+      }
+    }
+  }
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  .info {
+    flex: 1;
+    color: $default;
+    font-size: $font_size_4;
+    font-family: $font_text;
+    font-style: italic;
+    padding: 2rem 4rem;
+    opacity: 80.8;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
