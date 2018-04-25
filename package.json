@@ -9,7 +9,7 @@
     "node-sass": "^4.5.2"
   },
   "scripts": {
-    "server" : "lite-server",
-    "build" : "node-sass scss/style.scss css/style.css"
+    "server": "lite-server",
+    "build": "node-sass scss/style.scss css/style.css"
   }
 }

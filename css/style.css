@@ -209,9 +209,10 @@ h2.title {
       padding: 2rem; }
     #projects .project .thumb {
       flex: 1; }
-    #projects .project .thumb > img {
-      margin-top: -1rem;
-      width: 100%; }
+    #projects .project .thumb > svg {
+      width: 100%;
+      height: 300px;
+      fill: #a20bae; }
     #projects .project .info {
       flex: 1; }
       #projects .project .info h3 {
